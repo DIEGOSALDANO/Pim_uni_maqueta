@@ -1,0 +1,181 @@
+/*Media queries*/
+
+// variables:
+$breakpoint-xs: 319px;
+$breakpoint-sm: 568px;
+$breakpoint-md: 778px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1500px;
+$media-expressions: ( "landscape": "(orientation: landscape)", "portrait": "(orientation: portrait)") !default;
+@mixin media($media) {
+    @if $media==no-dislabled {
+        @media (max-width: $breakpoint-xs) {
+            @content;
+        }
+    }
+    @else if $media==xs {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $media==sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $media==md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $media==lg {
+        @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+    @else if $media==xl {
+        @media (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxl) {
+            @content;
+        }
+    }
+    @else if $media==xxl {
+        @media (min-width: $breakpoint-xxl) {
+            @content;
+        }
+    }
+}
+
+
+/*Variables de alto de pantalla*/
+
+$h500: 500px;
+$h600: 600px;
+$h700: 700px;
+$h800: 800px;
+$h900: 900px;
+
+
+
+/*Aspect ratio Media query*/
+
+@mixin iphone5 {
+    @media (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+        @content;
+    }
+}
+
+@mixin iphone5-landscape {
+    @media (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 71/40) {
+        @content;
+    }
+}
+
+@mixin iphone678 {
+    @media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 9/16) {
+        @content;
+    }
+}
+
+@mixin iphone678-landscape {
+    @media (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 16/9) {
+        @content;
+    }
+}
+
+@mixin ipad-portrait {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin ipad-landscape {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin ipadpro-portrait {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin ipadpro-landscape {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin iphonex-landscape {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin iphonex-portrait {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        @content;
+    }
+}
+
+
+/*Aspect ratio desktop device*/
+
+@mixin ratio15 {
+    @media only screen and (min-aspect-ratio: 342/167) and (orientation: landscape) {
+        @content;
+    }
+} //for iphone6/7/8 ,  Desktop 23", 20", 19"
+
+@mixin ratio9-16 {
+    @media only screen and (min-aspect-ratio: 9/16) and (orientation: landscape) {
+        @content;
+    }
+} //for iphone6/7/8 ,  Desktop 23", 20", 19"
+
+@mixin ratio9-16-Portrait {
+    @media only screen and (min-aspect-ratio: 9/16) and (orientation: portrait) {
+        @content;
+    }
+} //for iphone6/7/8 ,  Desktop 23", 20", 19"
+@mixin ratio8-5 {
+    @media only screen and (min-aspect-ratio: 8/5) and (orientation: landscape) {
+        @content;
+    }
+} //notebool 22" tablet 9"
+@mixin ratio8-5-portrait {
+    @media only screen and (min-aspect-ratio: 8/5) and (orientation: portrait) {
+        @content;
+    }
+} //notebool 22" tablet 9"
+@mixin ratio3-2 {
+    @media only screen and (min-aspect-ratio: 3/2) and (orientation: landscape) {
+        @content;
+    }
+} //notebook 13"
+@mixin ratio3-2-portrait {
+    @media only screen and (min-aspect-ratio: 2/3) and (orientation: portrait) {
+        @content;
+    }
+} //notebook 13"
+@mixin ratio4-3 {
+    @media only screen and (aspect-ratio: 4/3) and (orientation: landscape) {
+        @content;
+    }
+} //notebook 12"
+@mixin ratio4-3-portrait {
+    @media only screen and (min-aspect-ratio: 4/3) and (orientation: portrait) {
+        @content;
+    }
+} //notebook 12"
+@mixin ratio128-75 {
+    @media only screen and (min-aspect-ratio: 128/75) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        @content;
+    }
+} //Tablet 7", Ipad,  notebook 10"
+@mixin ratio128-75-portrait {
+    @media only screen and (min-aspect-ratio: 128/75) and (orientation: portrait) {
+        @content;
+    }
+} //Tablet 7", Ipad,  notebook 10"

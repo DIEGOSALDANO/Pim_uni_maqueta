@@ -1,0 +1,792 @@
+                        @import "_font";
+                        @import "_breakpoints";
+                        @import "_variables";
+                        @import "_slider";
+                        html {
+                            @include media(no-dislabled) {
+                                display: none;
+                            }
+                            @include reset-html
+                        }
+
+                        body {
+                            @include reset-body
+                        }
+
+                        //*{ font-family: $font-regular}
+
+                        @import "_header";
+                        main {
+                            overflow: hidden;
+                        }
+                        /*----------------First Section --------------*/
+
+                        section#card-categories {
+                           border-bottom: 1px solid darkgrey;
+                            div.wrapp-content {
+                            width: $wrapper-padding;
+                            display: grid;
+                            grid-template-columns: repeat(3, 2fr);
+                            grid-gap: 20px;
+                            max-width: 100%;
+                            margin: 20px auto;
+                            @include media(xs) {
+                                grid-template-columns: repeat(1, 2fr);
+                                grid-gap: 10px;
+                                max-width: 100%;
+                                margin: 10px auto;
+                            }
+                            @include media(lg) {
+                                grid-template-columns: repeat(2, 2fr);
+                                grid-gap: 10px;
+                                max-width: 100%;
+                                margin: 10px auto;
+                            }
+                            @include media(md) {
+                                grid-template-columns: repeat(2, 2fr);
+                                grid-gap: 10px;
+                                max-width: 100%;
+                                margin: 10px auto;
+                            }
+                            @include media(sm) {
+                                grid-template-columns: repeat(2, 2fr);
+                                grid-gap: 10px;
+                                max-width: 100%;
+                                margin: 10px auto;
+                            }
+
+                            div.card {
+                                justify-content: center;
+                                align-items: center;
+                                h5 {
+                                    margin: 0;
+                                }
+                                h5.text-title-card {
+                                    position: absolute;
+                                    color: $color-secundario;
+                                    font-family: $font-Bold;
+                                    font-size: $subtitle;
+                                }
+                            }
+                        }
+                        }
+
+                        section#novedades {
+                            div.svg-before {
+                                display: flex;
+                                justify-content: center;
+                                position: relative;
+                                top: -63px;
+                                &> svg {
+                                    width: 100%;
+                                    max-width: 35px;
+                                    transform: rotate(270deg);
+                                    position: absolute;
+                                }
+                            }
+                            div.content-box-slider {
+
+                                div.col-3 {
+                                    div.novedades-home {
+                                        background-color: $color-sexto;
+                                        width: 100%;
+                                        height: 360px;
+                                        @include media(xs) {
+                                            width: 100vw;
+                                            height: 260px;
+                                        }
+
+                                        div.box-ui {
+                                            width: 93%;
+                                            display: flex;
+                                            height: 100%;
+                                            justify-content: center;
+                                            position: absolute;
+                                            justify-content: center;
+                                            position: absolute;
+                                            flex-flow: column;
+                                            padding: 1rem 2.75em;
+                                            @include media(xs) {
+                                                width: 100vw;
+                                            }
+                                            h5 {
+                                                color: $color-secundario;
+                                                font-family: $font-Bold;
+                                                font-size: 36px;
+                                            }
+                                            span.ui-horizontal-line {
+                                                border: 0px;
+                                                border-bottom: 2px solid $color-noveno;
+                                                width: 100%;
+                                                max-width: 200px;
+                                            }
+                                            >p {
+                                                color: $color-noveno;
+                                                font-family: $font-regular;
+                                                font-size: $size_20;
+                                                padding-top: .5em;
+                                                font-weight: 100;
+                                            }
+                                        }
+                                        & div.svg-line-button {
+                                            display: flex;
+                                            position: relative;
+                                            height: 100%;
+                                            width: 100%;
+                                            align-items: center;
+                                            @include media(xs) {
+                                                display: none;
+                                            }
+                                            >svg {
+                                                width: 33px;
+                                                height: 150px;
+                                                transform: rotate(180deg);
+                                                position: absolute;
+                                                right: -30px;
+                                                z-index: 10;
+                                                @include media(xs) {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        & div.svg-line-button-mobile {
+                                            display: flex;
+                                            position: relative;
+                                            height: 100%;
+                                            width: 100%;
+                                            align-items: center;
+                                            @include media(xl){
+                                                display: none;
+                                            }
+                                            @include media(xxl){
+                                                display: none;
+                                            }
+                                            @include media(lg){
+                                                display: none;
+                                            }
+                                            @include media(md){
+                                                display: none;
+                                            }
+                                            >svg.svg-mobile {
+                                                width: 33px;
+                                                height: 150px;
+                                                -webkit-transform: rotate(180deg);
+                                                -ms-transform: rotate(180deg);
+                                                transform: rotate(270deg);
+                                                position: absolute;
+                                                left: 45%;
+                                                bottom: -88px;
+                                                z-index: 10;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                div.col-9 {
+                                    margin: auto 0px;
+                                    padding: 0px 30px;
+                                    div.slider-products {
+                                        display: flex;
+                                        align-items: center;
+
+
+
+                                        button:focus {outline:0;}
+
+                                    }
+
+                                }
+                            }
+                            .carousel-control-prev { left: -60px;}
+                            .carousel-control-next { right: -60px;}
+                        }
+
+                        /*Section baja de main.php // Descubre Nuestra App */
+
+                        section#info-below {
+                                background-color: #fcfcfc;
+                                margin-top: 10px;
+                                border-top: 1px solid darkgrey;
+                                div.content-ui-below {
+                                    div.svg-before {
+                                        display: flex;
+                                        justify-content: center;
+                                        position: relative;
+                                        top: -63px;
+                                        &> svg {
+                                            width: 100%;
+                                            max-width: 35px;
+                                            transform: rotate(270deg);
+                                            position: absolute;
+                                        }
+                                    }
+                                    div.row {
+                                        &> div.col-sm-12 {
+                                            padding: 3em 4em 1em 6em;
+                                            //padding: 3em 3em 3em 8vw;
+                                            div.box-content-info {
+                                                padding-right: 20vw;
+                                                font-family: $font-regular;
+
+                                                h5.title-info {
+                                                    color: $color-primario;
+                                                    font-family: $font-regular;
+                                                    font-size: 40px;
+                                                    margin-bottom: 0px;
+                                                    span {
+                                                        font-family: $font-Bold;
+                                                    }
+                                                }
+                                                & p {
+                                                    color: $color-primario;
+                                                    font-size: 1rem;
+                                                    padding-top: .5rem;
+                                                    text-align: justify;
+                                                    line-height: 1.4rem;
+                                                }
+                                                & h3 {
+                                                    font-size: 18px;
+                                                    margin-bottom: 0px;
+                                                    color: #0c67ad;
+                                                    padding-bottom: 5px;
+                                                    font-weight: 700;
+                                                    border-bottom: solid 1px;
+                                                    width: 100%;
+                                                    max-width: 176px;
+                                                }
+                                            }
+                                            div.row {
+                                                div.col-sm-12 {
+                                                    padding: 0em 1em;
+                                                    div.box-info {
+                                                        height: 90%;
+                                                        font-family: $font-regular;
+                                                        background-color: $color-secundario;
+                                                        padding: 1.5rem .5rem .5rem 1.5rem;
+                                                        border-radius: 15px;
+                                                        box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.32);
+                                                        margin-top: 2vh;
+                                                        >h5 {
+                                                            font-family: $font-regular;
+                                                            font-size: $size_14;
+                                                            font-weight: 500;
+                                                            color: $color-noveno;
+                                                            margin-bottom: .3rem;
+                                                            border-bottom: solid .5px $color-noveno;
+                                                            width: 100%;
+                                                            max-width: 285px;
+                                                            padding-bottom: 4px;
+                                                        }
+
+                                                        >p {
+                                                            font-size: $font-regular;
+                                                            color: $color-noveno;
+                                                            font-size: 12px;
+                                                            line-height: 16px;
+                                                        }
+                                                    }
+
+                                                }
+
+                                                div.col-sm-12:nth-child(2) div.box-info h5 {
+                                                    max-width: 170px;
+                                                }
+                                            }
+                                        }
+                                        & div#img-cel {
+                                            padding: 0em 0em 1em 0em;
+                                            width: 100%;
+                                            div.img-down {
+                                                & img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+
+/*---------------------------------- Page Product Jonas ---------------------------*/
+
+                        section#product-categories {
+                           min-height:  calc(100vh - 139px);
+                           height: 100%;
+                           background-image: url(../img/textura-grey.png);
+                           background-repeat: no-repeat;
+                           background-position: bottom right;
+                           background-size: 580px;
+
+                           img.img-category {
+                            width: 150px;
+                            height: 80px;
+                           }
+
+                           h3 {
+                            font-family: $font-Medium;
+                            font-weight: 400;
+                            }
+
+                           span.border-bottom {margin: 28px auto;}
+
+
+                           nav.sidebar { min-height:  calc(100vh - 139px);}
+                           nav h4 {
+                               font-family: $font-Bold;
+                               font-weight: 500;
+                               margin-bottom: 0em;
+                               @include ratio4-3 {
+                                font-size: 1rem;
+                            }
+                           }
+
+                            a.nav-link {
+                            background-color: transparent;
+                            padding: .5rem 1rem;
+                            font-family: $font-Medium;
+                            }
+
+                           .boderC{
+                              border: 2px solid ;
+                              border-width: 4px;
+                              border-color: #DFDCDA;
+                              margin: auto;
+                              background-color: white;
+                            }
+
+                            .fo {
+                                font-size: 14px;
+                                font-weight: 400;
+                                font-family: $font-regular;
+                                padding-bottom: 5px;
+                            }
+
+                            .sp{
+                                padding-left: 10px;
+                              }
+                              .sp2{
+                                padding-left: 18px;
+                              }
+                              .sp3{
+                                padding-left: 32px;
+                              }
+                              .sp4{
+                                padding-left: 29px;
+                              }
+                              .carousel-indicators li {
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 100%;
+                                background-color: #b7b7b7;
+                              }
+                              .carousel-indicators .active {
+                                background-color: #515151;
+                              }
+                              .container{
+                                margin-left: 0px;
+                              }
+
+                             .grd{
+                                background-color:#d2d2d2;
+                                color: #000000;
+                                padding: 0rem .75rem;
+                                font-family: $font-regular;
+                                font-size: 14px;
+                              }
+
+
+                              div.dropdown-menu p {
+                                margin-bottom: 0rem;
+                              }
+
+                              .dropdown-menu{
+                                background-color: #e6e6e6;
+                                color: #000;
+                              }
+                              .dropdown-item:hover{
+                                background-color:#c5c5c5;
+                                cursor: default;
+                              }
+
+                              .prd-title {
+                                font-family: $font-regular;
+                                font-weight:100;
+                            }
+
+                            .prd-descripcion {
+                                font-family: $font-Bold;
+                                margin-bottom: 1em !important;
+                            }
+
+                            .prd-attr {
+                                color: black;
+                                font-family: $font-Bold;
+                            }
+                        }
+
+                        div#personal_line {
+
+                            h5.text-title-card {
+                                font-family: $font-regular;
+                              }
+
+
+                             /*Modal ficha tecnica styles*/
+                            div.modal-header {
+                                background-color: $color-noveno;
+                               h5 {
+                                font-family: $font-Bold;
+                                color: $color-primario;
+                               }
+                            }
+                        }
+
+
+                            div#inner-brand {
+                                display: grid;
+                                grid-template-columns: 200px 200px 200px;
+                                grid-gap: 50px 120px;
+                                max-width: 100%;
+                                margin: 2em 5em;
+                                justify-content: center;
+
+
+                                &>div div:nth-child(2) p {
+                                    font-family: $font-regular;
+                                    font-weight: 100;
+                                }
+
+                                a {
+                                    color: $color-primario;
+                                    text-decoration: none;
+                                }
+                            }
+
+
+/*---------------------------------- Page download selective---------------------------*/
+
+                        section#download-selective {
+                           // height: calc(100vh - 139px);
+                            div.container-fluid {
+                                height: 100%;
+                                div.row {
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                       /*Sidebar sticky left*/
+
+                        div#sidebar-download {
+                            padding: 1em 0em 2em 2em;
+                            background-color: #dadada;
+                            border-color: #dadada;
+                            //height: 100%;
+                            overflow-y: auto;
+                            h5 {
+                                font-family: $font-Medium;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                padding-left: 1em;
+                                margin: 10% 0%;
+                            }
+                            div.sidebar-sticky{
+                                ul.nav {
+                                    li.nav-item {
+                                      & div.nav-link {
+                                        font-family: $font-regular;
+                                        color: #444242;
+                                        font-size: 14px;
+                                        padding: 3px 16px 3px;
+                                        &>svg {
+                                            margin-right: .5rem;
+                                        }
+                                        & span {
+
+                                        }
+                                      }
+                                       /*Desplegable*/
+                                      &>div:nth-child(2) {
+                                        ul.ui-ul-list-gral{
+                                          font-family: $font-regular;
+                                          color: #444242;
+                                          font-size: 14px;
+                                          padding-left: 15px;
+                                          & li.list-group-item {
+                                              background-color: transparent;
+                                              border: 0px;
+                                              padding-top: 3px;
+                                              padding-bottom: 3px;
+                                              &>div:nth-child(1){
+                                                  &> svg {
+                                                      margin-right: .5rem;
+                                                  }
+                                              }
+                                              &>div:nth-child(2){
+                                                  padding-left: 30px;
+
+                                              }
+                                          }
+                                       }
+                                   }
+                                    }
+
+
+                                span.custom-control {
+                                    padding-left: 2rem;
+                                }
+                            }
+
+                        }
+                        }
+
+                        .custom-control-label::before {
+                            position: absolute;
+                            top: .25rem;
+                            left: 0;
+                            display: block;
+                            width: 1rem;
+                            height: 1rem;
+                            pointer-events: none;
+                            content: "";
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            background-color: #fafafa;
+                        }
+
+                        .pointer {
+                            cursor: pointer;
+                        }
+
+
+                        /* Download selective - right */
+
+                        section#download-selective {
+                            div#query-download {
+                                background-color: $color-octavo;
+                                background-image: url(../img/textura.png);
+                                background-repeat: no-repeat;
+                                background-position: right bottom;
+                                background-size: 580px;
+                                height: 100%;
+                                    overflow-y: auto;
+
+                                .wrap-download {
+
+                                        & div {}
+                                        & div {}
+                                        & div.row {
+
+                                            div.col {
+
+                                                h6 {
+                                                    margin-top: 3.5vh;
+                                                    font-family: $font-Bold;
+                                                    font-weight: 800;
+                                                    font-size: 1.5vw;
+                                                    padding-left: 20px;
+                                                }
+
+                                                div.wrap-col-download {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(1, 1fr);
+                                                    grid-gap: 20px;
+                                                    .card-download {
+                                                        height: 230px;
+                                                    }
+
+                                                    img.img-card-icon-download {
+                                                        width: 40px;
+                                                        margin-bottom: .5em;
+                                                    }
+                                                    H5 {
+                                                        @include  tittle-card;
+                                                    }
+                                                    p {
+                                                        font-family: $font-regular;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+
+
+                                         }
+                                }
+
+                            }
+                        }
+
+                        div#query-download {
+                            .custom-control { padding-left: 0px; padding-right: 1.5rem;}
+
+                            .custom-control-label {
+                                position: relative;
+                                margin-bottom: 0;
+                                vertical-align: top;
+                                &::before {
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    background-color: rgb(240, 240, 240);
+                                    margin: .5em 0em;
+                                  }
+                                  &::after {
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    margin: .5em 0em;
+                                  }
+
+                              }
+                              .custom-control-input:checked~.custom-control-label::before {
+                                color: #fff;
+                                border-color: #007bff;
+                                background-color: #007bff;
+                              }
+
+                              div.text-center {
+                                  width: 100%;
+                                  button.btn-download {
+                                      background-color: #007bff;
+                                      color: $color-secundario;
+                                      font-family: $font-regular;
+                                      font-size: 1.3vw;
+                                      width: 180px;
+                                      margin: 2vh 0em;
+                                      &:hover {
+                                        background-color: #056ad6;
+                                      }
+                                  }
+                              }
+                        }
+
+/*-------------------  Page key visual  --------------------------*/
+
+                        section#keyvisual {
+                           // height: calc(100vh - 139px);
+                           background-image: url(../img/textura.png);
+                           background-repeat: no-repeat;
+                            div.ui-box-tittle {
+                                padding-left: 2.5em;
+                                padding-bottom: .2em;
+                                h3 {
+                                    font-family: $font-Bold;
+                                }
+                                h6 {
+                                    font-family: $font-regular;
+                                    font-weight: 800;
+                                }
+                            }
+
+                            div.inner-keyvisual {
+                                div.top-buttons {
+                                    padding: 0px 15px;
+                                    margin: 2.5em 3em 2em 3em;
+                                    form.col-3 {
+                                       // width: 30vw;
+                                       padding-left: 0px;
+                                    }
+                                    button {
+                                        font-family: $font-regular;
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                            margin-right: 1em;
+                                        }
+
+                                    }
+                                }
+
+                                div.row:nth-child(2) {
+                                    margin: 0em 3em;
+                                    div.inner-table {
+                                        table { margin-bottom: 2em;}
+                                        table thead {
+                                            font-family: $font-Medium;
+                                        }
+                                        table tbody {
+                                            font-family: $font-regular;
+                                            color: $color-primario;
+                                            font-size: 1vw;
+                                            tr td a { color: $color-primario;}
+                                        }
+
+                                        div#Modal-delete-key{
+                                            div.modal-header {
+                                                background-color: $color-octavo;
+                                                font-family: $font-regular;
+                                            }
+                                            div.modal-body {
+                                                font-family: $font-Medium;
+                                                text-align: center;
+                                            }
+
+                                        }
+
+                                       &>h6 {
+                                            font-family: $font-regular;
+                                            font-weight: 100;
+                                            padding-left: 12px;
+                                            margin-bottom: 2em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+/*------------------------- Page: Logos view --------------------------------*/
+                        section#logos {
+                            min-height: calc(100vh - 139px);
+                            height: 100%;
+                            background-image: url(../img/textura-grey.png);
+                            background-repeat: no-repeat;
+                            background-position: bottom right;
+
+                            section#card-categories {
+                                div.wrapp-content {
+                                    display: grid;
+                                    grid-template-columns: repeat(5, 3fr);
+                                    grid-gap: 50px 20px;
+                                    @include media(md){
+                                        grid-template-columns: repeat(3, 3fr);
+                                    }
+                                    @include media(sm){
+                                        grid-template-columns: repeat(2, 3fr);
+                                    }
+                                    @include media(xs){
+                                        grid-template-columns: repeat(1, 3fr);
+                                    }
+
+                                }
+                            }
+                        }
+                       section.personal_line{
+
+                        width: 100%;
+                        .sidebarColor{
+                            background-color: #cecdcd;
+                            height: calc(135vh - 143px);
+                          }
+
+                          section#card-categories{
+                            border-bottom: none;
+                          }
+                          .sinBoder{
+                            width: 170px;
+                            margin: auto;
+                          }
+                          .boderC{
+                            border: 2px solid ;
+                            border-width: 4px;
+                            border-color: #DFDCDA;
+                            width: 170px;
+                            background-color: white;
+                          }
+                          .ctn{
+                            margin-top:15px;
+                            padding: 0 26px;
+                            background-color :#cecdcd;
+                            color:#000;
+                            border-color: #cecdcd;
+                          }
+                       }
+                        @import '_footer';

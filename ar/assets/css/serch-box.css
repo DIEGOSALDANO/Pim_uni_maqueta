@@ -1,0 +1,53 @@
+
+        .search-box{
+          background-color: #444242;
+          position: absolute;
+          top: 60px;
+          width: 248px;
+          height: 110px;
+          padding:1em 0em;
+          line-height: 15px;
+          display: none;
+          z-index: 1000;
+          right: 5px;
+        }
+
+        .search-box:before{
+          /*content: "";*/
+          position: absolute;
+          top: -32px;
+          right: 35px;
+          margin-right: -5px;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 14px solid transparent;
+          border-bottom: 14px solid white;
+        }
+
+        .search-box input[type="text"]{
+          width: 90%;
+          padding: 15px 10px;
+          border: 2px solid #444242;
+          outline: none;
+          margin: auto;
+        }
+
+        .search-box input[type="button"]{
+          width: 80px;
+          padding: 5px 0;
+          background: #444242;
+          color: #fff;
+          /*margin-left: -6px;*/
+          border: 1px solid #444242;
+          outline: none;
+          cursor: pointer;
+        }
+
+        .prd-title {
+            font-weight:500;
+            color: black;
+        }
+
+        h2.text-title-card {
+          font-family: "Avenir Black";
+        }

@@ -1,0 +1,114 @@
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black !important;
+  color: #8fcde7 !important; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 600s ease-in-out 0s;
+  -o-transition: background-color 600s ease-in-out 0s;
+  transition: background-color 600s ease-in-out 0s; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  overflow: visible;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: #ffffff00;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 1rem "Avenir Regular"; }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+@font-face {
+  font-family: "Avenir Bc";
+  src: url(../webfonts/AvenirNextLTPro-BoldCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir LightC";
+  src: url(../webfonts/AvenirNextLTPro-Cn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url(../webfonts/AvenirNextLTPro-HeavyCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir MediumC";
+  src: url(../webfonts/AvenirNextLTPro-MediumCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Regular";
+  src: url(../webfonts/AvenirNextLTPro-Regular.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+/*------------footer--------------------*/
+footer {
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  background-color: #444242;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000; }
+  footer div.footer-ui {
+    width: 97%;
+    margin: auto 2em auto 3.8em;
+    color: #ffffff;
+    font-family: "Avenir Regular"; }
+    footer div.footer-ui p {
+      margin-bottom: 0px;
+      line-height: 14px;
+      font-size: 12px; }
+      @media (max-width: 568px) {
+        footer div.footer-ui p {
+          font-size: 11px;
+          line-height: 14px; } }
+      @media (min-width: 568px) and (max-width: 778px) {
+        footer div.footer-ui p {
+          line-height: 14px;
+          font-size: 10px; } }
+      footer div.footer-ui p > a {
+        color: #ffffff;
+        text-decoration: none; }
+        footer div.footer-ui p > a > img {
+          margin-left: .5em;
+          margin-bottom: 5px; }
+    @media (max-width: 568px) {
+      footer div.footer-ui {
+        text-align: center; } }

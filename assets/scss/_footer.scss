@@ -1,0 +1,35 @@
+/*------------footer--------------------*/
+
+footer {
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  background-color: $color-primario;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  div.footer-ui {
+      width: $wrapper-padding;
+      margin: auto;
+      color: $color-secundario;
+      font-family: $font-regular;
+      p {
+          margin-bottom: 0px;
+          line-height: 14px;
+          font-size: 12px;
+          @include media(xs) {
+              font-size: 11px;
+              line-height: 14px;
+          }
+          @include media (sm) {
+              line-height: 14px;
+              font-size: 10px;
+          }
+      }
+      @include media(xs) {
+          text-align: center;
+      }
+  }
+}

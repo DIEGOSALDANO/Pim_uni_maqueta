@@ -1,0 +1,103 @@
+/**
+ * Hidden fallback
+ */
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+
+/**
+ * Styling top level items
+ */
+.nav a,
+.nav label {
+  margin: 0;
+  display: block;
+  padding: .85rem;
+  color: rgb(37, 31, 31);
+  background-color: #FFFFFF;
+  transition: all .25s ease-in;
+}
+.nav a:focus, .nav a:hover,
+.nav label:focus,
+.nav label:hover {
+  color: rgba(53, 49, 49, 0.5);
+  background: #FFFFFF;
+}
+
+.nav label {
+  cursor: pointer;
+}
+
+/**
+ * Styling first level lists items
+ */
+.group-list a,
+.group-list label {
+  padding-left: 2rem;
+  background: #FFFFFF;
+}
+.group-list a:focus, .group-list a:hover,
+.group-list label:focus,
+.group-list label:hover {
+  background: #FFFFFF;
+}
+
+/**
+ * Styling second level list items
+ */
+.sub-group-list a,
+.sub-group-list label {
+  padding-left: 4rem;
+  background: #FFFFFF;
+}
+.sub-group-list a:focus, .sub-group-list a:hover,
+.sub-group-list label:focus,
+.sub-group-list label:hover {
+  background: #FFFFFF;
+}
+
+/**
+ * Styling third level list items
+ */
+.sub-sub-group-list a,
+.sub-sub-group-list label {
+  padding-left: 6rem;
+  background: #454545;
+  &:focus,
+  &:hover {background: darken(#454545, 7%);}
+}
+/**
+ * Hide nested lists
+ */
+.group-list,
+.sub-group-list,
+.sub-sub-group-list {
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+ 
+.nav__list input[type=checkbox]:checked + label + ul {
+	/* reset the height when checkbox is checked */
+  max-height: 1000px;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * Rotating chevron icon
+ */
+label > span {
+  float: right;
+  transition: transform .65s ease;
+}
+.nav__list input[type=checkbox]:checked + label > span {
+  padding: 0;
+  list-style: none;
+  transform: rotate(90deg);
+}

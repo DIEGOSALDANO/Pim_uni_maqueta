@@ -1,0 +1,66 @@
+$color-primario: #444242;
+$color-secundario: #ffffff;
+$color-terciario: #502470;
+$color-cuarto: #D8D9DD;
+$color-quinto: #577FB9;
+
+
+
+/*--------------Variables Fuentes ----------------*/
+$font-Bold: 'Avenir Black';
+$font-Light: 'Avenir roman';
+$font-regular: 'Avenir roman';
+$font-Medium: 'Avenir Medium';
+
+
+/*-----------Variables wrap-----------------*/
+$wrap-nav: 90%;
+$wrapper-padding: 95%;
+
+/*Margenes standars*/
+$margin-centrado: 0px auto;
+$auto: auto;
+$none: none;
+
+/*Font size standars*/
+$subtitle: 18px;
+
+
+@mixin reset-html {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@mixin  reset-body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/*reset*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+	-webkit-text-fill-color: black !important;
+	color:#8fcde7 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+transition: background-color 600s ease-in-out 0s;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit]
+{
+    overflow: visible;
+
+    cursor: pointer;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

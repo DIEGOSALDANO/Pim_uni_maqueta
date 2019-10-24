@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Avenir Bc";
+  src: url(../webfonts/AvenirNextLTPro-BoldCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir LightC";
+  src: url(../webfonts/AvenirNextLTPro-Cn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url(../webfonts/AvenirNextLTPro-HeavyCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir MediumC";
+  src: url(../webfonts/AvenirNextLTPro-MediumCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Regular";
+  src: url(../webfonts/AvenirNextLTPro-Regular.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }

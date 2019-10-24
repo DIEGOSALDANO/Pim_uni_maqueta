@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Avenir Black";
+  src: url(../webfonts/avenir-black.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir roman";
+  src: url(../webfonts/Avenir-Roman.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+/*--------------Variables Fuentes ----------------*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black !important;
+  color: #8fcde7 !important; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 600s ease-in-out 0s;
+  -o-transition: background-color 600s ease-in-out 0s;
+  transition: background-color 600s ease-in-out 0s; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  overflow: visible;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*--------header  views -------*/
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header div.wrapper-init {
+    width: 100%;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header div.wrapper-init div.container-nav {
+      width: 100vw;
+      /* Text subtitle init */ }
+      header div.wrapper-init div.container-nav a.navbar-brand img {
+        width: 70px; }
+      header div.wrapper-init div.container-nav div.text-top-catalogo {
+        color: #ffffff;
+        font-size: 2.6rem;
+        font-family: "Avenir roman";
+        line-height: 3rem;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        left: 80px;
+        /* @include media (xs){
+                font-size: 2.5rem;
+                line-height: 1em;
+                text-align: center;
+                left: 0%;
+                right: 0%;
+                padding-right: 0px;
+                margin: 1em auto;
+              }
+                @include iphone678 {
+                  font-size: 3rem;
+                }
+                @include media (lg) {
+                  line-height: 4vw;
+                }
+                @include ratio9-16 {
+
+                  line-height: 5vw;
+                }
+                @include ratio128-75 {
+
+                }*/ }
+        @media (min-width: 1500px) {
+          header div.wrapper-init div.container-nav div.text-top-catalogo {
+            font-size: 4rem;
+            line-height: 4.6rem; } }
+        header div.wrapper-init div.container-nav div.text-top-catalogo span.text-bold {
+          font-family: "Avenir Black";
+          font-size: 3rem; }
+          @media (min-width: 1500px) {
+            header div.wrapper-init div.container-nav div.text-top-catalogo span.text-bold {
+              font-size: 4.5rem; } }
+
+html {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; }
+  @media (max-width: 319px) {
+    html {
+      display: none; } }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; }
+
+/*Init page // Choose country*/
+div#content-init {
+  width: 100%;
+  height: 100vh; }
+  div#content-init div.ui-fullimage {
+    background: url(../img/main.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  div#content-init div.wrapper-init {
+    width: 95%;
+    margin: 20px auto 0px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 568px) {
+      div#content-init div.wrapper-init {
+        width: 100%;
+        margin: 20px 0px 0px 0px; } }
+    @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+      div#content-init div.wrapper-init {
+        width: 93%; } }
+
+/*---------------main init----------------*/
+main div.page-container-init {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: -2em; }
+  main div.page-container-init h3.select-country {
+    color: #ffffff;
+    margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Avenir Medium";
+    font-weight: 700;
+    font-size: 1.7rem; }
+    @media (max-width: 568px) {
+      main div.page-container-init h3.select-country {
+        display: none; } }
+  @media (min-width: 1500px) {
+    main div.page-container-init div#only-mobile form {
+      display: none; } }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    main div.page-container-init div#only-mobile form {
+      display: none; } }
+  @media (min-width: 998px) and (max-width: 1200px) {
+    main div.page-container-init div#only-mobile form {
+      display: none; } }
+  @media (min-width: 778px) and (max-width: 998px) {
+    main div.page-container-init div#only-mobile form {
+      display: none; } }
+  @media (min-width: 568px) and (max-width: 778px) {
+    main div.page-container-init div#only-mobile form {
+      display: none; } }
+  main div.page-container-init div#only-mobile form label.title-form {
+    color: #ffffff;
+    margin: .75em auto;
+    font-family: "Avenir roman"; }
+  main div.page-container-init .ui-box-map > img {
+    width: 400px;
+    height: auto;
+    padding-bottom: 15px; }
+    @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+      main div.page-container-init .ui-box-map > img {
+        width: 19rem; } }
+    @media (max-width: 568px) {
+      main div.page-container-init .ui-box-map > img {
+        display: none; } }
+  main div.page-container-init .box-country {
+    margin-top: 26px;
+    position: absolute;
+    width: 400px;
+    height: 497px; }
+    @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+      main div.page-container-init .box-country {
+        margin-top: 2em;
+        width: 18.75rem;
+        height: 23.3rem; } }
+    @media (max-width: 568px) {
+      main div.page-container-init .box-country {
+        display: none; } }
+    main div.page-container-init .box-country div.pais:nth-child(1) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      left: -50px;
+      top: 100px; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(1) img {
+          width: 11.7rem;
+          left: -50px;
+          top: 100px; } }
+    main div.page-container-init .box-country div.pais:nth-child(2) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      right: -40px;
+      bottom: 52%; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(2) img {
+          width: 11.7rem; } }
+    main div.page-container-init .box-country div.pais:nth-child(3) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      bottom: 35%;
+      right: -50px; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(3) img {
+          width: 11.7rem; } }
+    main div.page-container-init .box-country div.pais:nth-child(4) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      bottom: 30px;
+      left: 50%; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(4) img {
+          width: 11.7rem; } }
+    main div.page-container-init .box-country div.pais:nth-child(5) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      left: 45%;
+      top: -10%; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(5) img {
+          width: 11.7rem; } }
+    main div.page-container-init .box-country div.pais:nth-child(6) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      top: -25px;
+      left: -55px; }
+      @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+        main div.page-container-init .box-country div.pais:nth-child(6) img {
+          width: 11.7rem; } }
+
+/*Maps country*/
+.fondoARG {
+  background: url("../img/mapaARG.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 12px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoARG {
+      background-size: 17.7rem 21.3rem;
+      background-position: 10px -4px; } }
+
+.fondoBOL {
+  background: url("../img/mapaBOL.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 11px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoBOL {
+      background-size: 17.7rem 21.3rem;
+      background-position: 7px -5px; } }
+
+.fondoCHI {
+  background: url("../img/mapaCHI.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 8px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoCHI {
+      background-size: 17.7rem 21.3rem;
+      background-position: 7px -5px; } }
+
+.fondoPAR {
+  background: url("../img/mapaPAR.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 17px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoPAR {
+      background-size: 17.7rem 21.3rem;
+      background-position: 12px -5px; } }
+
+.fondoPER {
+  background: url("../img/mapaPER.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 8px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoPER {
+      background-size: 17.7rem 21.3rem;
+      background-position: 5px -5px; } }
+
+.fondoURU {
+  background: url("../img/mapaURU.png") no-repeat;
+  background-size: 379px 455px;
+  background-position: 17px 0px; }
+  @media only screen and (min-aspect-ratio: 128 / 75) and (orientation: landscape) {
+    .fondoURU {
+      background-size: 17.7rem 21.3rem;
+      background-position: 14px -5px; } }
+
+/*--------header  views -------*/
+/*------------footer--------------------*/
+footer {
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  background-color: #444242;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1000; }
+  footer div.footer-ui {
+    width: 95%;
+    margin: auto;
+    color: #ffffff;
+    font-family: "Avenir roman"; }
+    footer div.footer-ui p {
+      margin-bottom: 0px;
+      line-height: 14px;
+      font-size: 12px; }
+      @media (max-width: 568px) {
+        footer div.footer-ui p {
+          font-size: 11px;
+          line-height: 14px; } }
+      @media (min-width: 568px) and (max-width: 778px) {
+        footer div.footer-ui p {
+          line-height: 14px;
+          font-size: 10px; } }
+    @media (max-width: 568px) {
+      footer div.footer-ui {
+        text-align: center; } }

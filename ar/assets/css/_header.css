@@ -1,0 +1,304 @@
+/*--------header  views -------*/
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  -webkit-text-fill-color: white !important; }
+
+@-webkit-keyframes autofill {
+  to {
+    color: black;
+    background: transparent; } }
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s; }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+@font-face {
+  font-family: "Avenir Bc";
+  src: url(../webfonts/AvenirNextLTPro-BoldCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir LightC";
+  src: url(../webfonts/AvenirNextLTPro-Cn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url(../webfonts/AvenirNextLTPro-HeavyCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir MediumC";
+  src: url(../webfonts/AvenirNextLTPro-MediumCn.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Regular";
+  src: url(../webfonts/AvenirNextLTPro-Regular.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header div.wrapper-nav {
+    width: 100%;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #444242;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    header div.wrapper-nav div.container-nav {
+      padding: 0px;
+      margin: auto;
+      width: 100%;
+      /*desktop nav and header*/ }
+      header div.wrapper-nav div.container-nav a.navbar-brand {
+        margin: .5rem 0px .5rem 10px; }
+        header div.wrapper-nav div.container-nav a.navbar-brand > img {
+          width: 75%; }
+      header div.wrapper-nav div.container-nav nav#nav-categories {
+        padding: 0px; }
+        header div.wrapper-nav div.container-nav nav#nav-categories button.navbar-toggler {
+          border-color: rgba(255, 255, 255, 0);
+          margin: .5rem 30px .5rem 30px; }
+        @media (min-width: 778px) and (max-width: 992px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        @media (min-width: 568px) and (max-width: 778px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        @media (max-width: 568px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+          content: '';
+          position: absolute;
+          top: 75px;
+          right: 48px;
+          width: 16px;
+          height: 16px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background: #333333;
+          border-top: solid 1px #333333;
+          border-left: solid 1px #333333; }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+          @media (min-width: 1200px) and (max-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+          @media (min-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download {
+          background-color: #ffffff;
+          border-color: #ffffff;
+          font-size: 16px;
+          height: 2.2rem;
+          margin: auto 0px;
+          width: 100%;
+          max-width: 200px;
+          font-family: "Avenir Bc";
+          border-radius: 15px; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download span {
+            background-color: #444242;
+            color: #ffffff;
+            border-radius: 45%;
+            padding: .15rem;
+            margin-left: .5em; }
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download span i {
+              width: 16px;
+              height: 16px;
+              font-size: 12px;
+              margin: .15rem; }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+          padding: 0px 0vw; }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          @media (min-width: 1200px) and (max-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          @media (min-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+            font-family: "Avenir Medium";
+            color: white;
+            height: auto;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            @media (min-width: 992px) and (max-width: 1200px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1200px) and (max-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                height: 79px; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+            font-family: "Avenir Medium";
+            color: white;
+            height: auto;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            @media (min-width: 992px) and (max-width: 1200px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1200px) and (max-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+          margin: .5rem 30px .5rem 30px; }
+          @media (max-width: 568px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          @media (min-width: 568px) and (max-width: 778px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          @media (min-width: 778px) and (max-width: 992px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header img.icon-nav {
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            cursor: pointer; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header h5.text-profile {
+            color: #ffffff;
+            padding-left: 10px;
+            font-family: "Avenir Medium";
+            margin: 0px;
+            margin-right: 1.5vw;
+            font-size: 1rem; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header span {
+            border-left: solid 1px;
+            height: 23px;
+            background-color: #ffffff;
+            margin: 0px 1vw;
+            border-color: #ffffff; }
+
+/* Menu dropdown*/
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+  list-style: none;
+  background-color: #333333;
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: .25rem; }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+  @media (min-width: 1500px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+
+a.dropdown-item {
+  color: #fafafa; }
+
+.dropdown-menu.collapsing {
+  display: block; }
+
+@media (max-width: 992px) {
+  .dropdown-menu {
+    padding: 0;
+    margin-top: 0 !important;
+    border: 0 !important; }
+  .dropdown-menu:before {
+    content: "";
+    display: block;
+    padding-top: .5rem; }
+  .dropdown-menu:after {
+    content: "";
+    display: block;
+    padding-bottom: .5rem; } }
+
+@media (min-width: 992px) {
+  .dropdown > div {
+    position: absolute;
+    clip: rect(0.5rem, 9999px, 9999px, -9999px); }
+  .dropdown-menu {
+    height: auto !important;
+    -webkit-transition: -webkit-transform 0.35s ease !important;
+    transition: -webkit-transform 0.35s ease !important;
+    -o-transition: transform 0.35s ease !important;
+    transition: transform 0.35s ease !important;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease !important; }
+  .dropdown-menu.collapse, .dropdown-menu.sliding {
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%); }
+  .dropdown-menu.collapse:not(.show) {
+    display: block; }
+  .dropdown-menu.collapse.show {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); } }

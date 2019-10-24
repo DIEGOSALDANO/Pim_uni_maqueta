@@ -1,0 +1,272 @@
+@import '_font';
+@import '_breakpoints';
+@import '_variables';
+@import '_header';
+
+html {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    @include media(no-dislabled) {
+      display: none;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/*Init page // Choose country*/
+
+div#content-init {
+  width: 100%;
+  height: 100vh;
+
+    div.ui-fullimage {
+      background: url(../img/main.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 100%
+    }
+
+    div.wrapper-init {
+        width: $wrapper-padding;
+        margin: 20px auto 0px;
+        align-items: center;
+        display: flex;
+        @include media(xs) {
+          width: 100%;
+          margin: 20px 0px 0px 0px;
+        }
+        @include ratio9-16 {
+            width: 93%;
+           }
+    }
+}
+
+/*---------------main init----------------*/
+
+main {
+  div.page-container-init {
+   width: 100%;
+   padding-left: 20px;
+   padding-right: 20px;
+   //height: calc(100vh - 216px);
+   display: flex;
+   justify-content: flex-start;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   margin-top: -2em;
+   @include ratio128-75 {
+    //height: calc(100vh - 160px);
+   }
+   @include ratio9-16 {
+   // height: calc(100vh - 243px);
+   }
+
+   h3.select-country {
+    color: $color-secundario;
+    margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: $font-Medium;
+    font-weight: 700;
+    font-size: 1.7rem;
+    @include media(xs) {
+     display: none;}
+  }
+
+   div#only-mobile form {
+    @include media(xxl){
+      display: none;}
+    @include media(xl){
+      display: none;}
+      @include media(lg){
+        display: none;}
+        @include media(md){
+          display: none;}
+          @include media(sm){
+            display: none;}
+     label.title-form {
+    color: $color-secundario;
+    margin: .75em auto;
+    font-family: $font-regular;
+   }
+  }
+
+   .ui-box-map {
+      & > img {
+       width: 400px;
+       height: auto;
+       padding-bottom: 15px;
+       @include ratio128-75 {
+         width: 19rem;
+       }
+       @include media(xs) {
+        display: none;
+      }
+    //@include ratio9-16 {
+    //    width: 460px;
+    //}
+     }
+
+   }
+
+   .box-country {
+     margin-top: 26px;
+    position: absolute;
+    width: 400px;
+    height: 497px;
+    @include ratio128-75 {
+      margin-top: 2em;
+     width: 18.75rem;
+    height: 23.3rem;
+   }
+    @include media(xs) {
+     display: none;
+   }
+
+    div.pais:nth-child(1) img {
+      width: 250px;
+      position: absolute;
+      z-index: 11;
+      left: -50px;
+      top: 100px;
+      @include ratio128-75 {
+       width: 11.7rem;
+       left: -50px;
+      top: 100px;
+     }
+    }
+
+    div.pais:nth-child(2) img {
+     width: 250px;
+     position: absolute;
+     z-index: 11;
+     right: -40px;
+     bottom: 52%;
+     @include ratio128-75 {
+       width: 11.7rem;
+     }
+   }
+
+   div.pais:nth-child(3) img {
+     width: 250px;
+     position: absolute;
+     z-index: 11;
+     bottom: 35%;
+     right: -50px;
+     @include ratio128-75 {
+       width: 11.7rem;
+     }
+   }
+
+   div.pais:nth-child(4) img {
+     width: 250px;
+     position: absolute;
+     z-index: 11;
+     bottom: 30px;
+     left: 50%;
+     @include ratio128-75 {
+       width: 11.7rem;
+     }
+   }
+
+   div.pais:nth-child(5) img {
+     width: 250px;
+     position: absolute;
+     z-index: 11;
+     left: 45%;
+     top: -10%;
+     @include ratio128-75 {
+       width: 11.7rem;
+     }
+   }
+
+   div.pais:nth-child(6) img {
+     width: 250px;
+     position: absolute;
+     z-index: 11;
+     top: -25px;
+     left: -55px;
+     @include ratio128-75 {
+       width: 11.7rem;
+
+     }
+   }
+ }
+  }
+}
+
+
+//--------------------------------------------
+/*Maps country*/
+//--------------------------------------------
+
+.fondoARG{
+  background: url('../img/mapaARG.png') no-repeat;
+  background-size:379px 455px;
+  background-position:12px 0px;
+  @include ratio128-75 {
+    background-size: 17.7rem 21.3rem;
+    background-position: 10px -4px;
+  }
+}
+
+  .fondoBOL{
+  background: url('../img/mapaBOL.png') no-repeat;
+  background-size:379px 455px;
+  background-position:11px 0px;
+  @include ratio128-75 {
+    background-size:17.7rem 21.3rem;
+    background-position: 7px -5px;
+  }
+  }
+
+  .fondoCHI{
+  background: url('../img/mapaCHI.png') no-repeat;
+  background-size:379px 455px;
+  background-position: 8px 0px;
+  @include ratio128-75 {
+    background-size:17.7rem 21.3rem;
+    background-position: 7px -5px;
+  }
+}
+
+  .fondoPAR{
+  background: url('../img/mapaPAR.png') no-repeat;
+  background-size:379px 455px;
+  background-position:17px 0px;
+  @include ratio128-75 {
+    background-size:17.7rem 21.3rem;
+    background-position: 12px -5px;
+  }
+  }
+
+  .fondoPER{
+  background: url('../img/mapaPER.png') no-repeat;
+  background-size:379px 455px;
+  background-position:8px 0px;
+  @include ratio128-75 {
+    background-size:17.7rem 21.3rem;
+    background-position: 5px -5px;
+  }
+  }
+
+  .fondoURU{
+  background: url('../img/mapaURU.png') no-repeat;
+  background-size:379px 455px;
+  background-position:17px 0px;
+  @include ratio128-75 {
+    background-size:17.7rem 21.3rem;
+    background-position: 14px -5px;
+  }
+  }
+/*--------header  views -------*/
+@import '_footer';

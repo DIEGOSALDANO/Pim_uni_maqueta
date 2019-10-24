@@ -1,0 +1,175 @@
+@import "_variables";
+@import "_breakpoints";
+div#login {
+    form {
+    &.form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+        @include ipad-portrait {
+            max-width: 600px;
+        }
+        @include ipadpro-portrait {
+            max-width: 700px;
+        }
+        @include ipad-landscape {
+            max-width: 400px;
+        }
+        @include ratio9-16 {
+            max-width: 60vw;
+        }
+        @include ratio15 {
+            max-width: 50vw;
+        }
+
+    }
+    & h5.signin-title {
+        font-family: $font-Medium;
+        color: $color-secundario;
+        font-size: 7vw;
+        text-align: $center;
+        font-weight: 600;
+        @include ipad-landscape {
+            font-size: 4vw;
+        }
+        @include ratio9-16 {
+            font-size: 3rem;
+        }
+    }
+    &>img {
+        text-align: center;
+        width: 65px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 3.5vh auto;
+        @include ipad-portrait {}
+        @include ratio9-16 {
+        }
+        @include ratio15 {
+            width: 55px;
+            margin: 3.5vh auto;
+        }
+    }
+    & div.ui-input {
+        @include ratio9-16 {
+            display: flex;
+            justify-content: center;
+            margin-top: 5vh;
+        }
+        @include media(sm) {
+            margin-top: 0vh;
+        }
+    }
+    input#inputPassword {
+        margin-left: 7vw;
+        @include media(xs) {
+            margin-left: 0vw;
+        }
+
+        @include ipad-portrait {
+            margin-left: 0vw;
+
+        }
+
+    }
+    & input.form-control {
+        font-family: $font-regular;
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $color-secundario;
+        background-color: transparent !important;
+        background-clip: padding-box;
+        border: 0px solid #ced4da00;
+        border-bottom: 1px solid $color-secundario;
+        border-radius: 0px;
+        margin-bottom: 1.5em;
+        @include ipad-portrait {
+            font-size: 1.5rem;
+
+        }
+        @include ratio9-16 {
+            font-size: 1.2rem;
+            max-width: 330px !important;
+        }
+        @include media(xl) {
+            font-size: 1.2rem;
+            max-width: 400px !important;
+
+        }
+    }
+     ::placeholder {
+        color: $color-secundario;
+    }
+    & button.btn-init {
+        color: #212529;
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        font-family: $font-regular;
+        align-content: center;
+        font-weight: 800;
+        @include ipad-portrait {
+            font-size: 1.5rem;
+        }
+        @include ratio9-16 {
+            max-width: 250px;
+            margin: 2vh auto;
+        }
+        @include media(sm) {
+            max-width: 180px;
+            padding: .3rem .5rem;
+            font-size: 1rem;
+        }
+    }
+
+}
+h6 {
+    font-family: $font-regular;
+    color: $color-secundario;
+    font-size: $size_16;
+    line-height: $size_16;
+    @include ipad-portrait {
+        font-size: $size_20;
+    }
+    @include ratio9-16 {
+        font-size: 1.5vw;
+        line-height: 2vw;
+        padding-top: 4vh;
+    }
+
+    @include media(sm) {
+        padding-top: 0vh;
+        font-size: 1.8vw;
+    }
+    .mt-5 {
+        @include media(sm) {
+            margin-top: 1.5rem !important;
+        }
+    }
+}
+h4 {
+    font-family: $font-regular;
+    color: #faf700;
+}
+
+p {
+    font-family: $font-regular;
+    color: $color-secundario;
+    font-size: $size_14;
+    line-height: $size_14;
+    @include ipad-portrait {
+        font-size: $size_20;
+    }
+    @include ratio9-16 {
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+    @include media(sm) {
+        font-size: 1.8vw;
+    }
+}
+}

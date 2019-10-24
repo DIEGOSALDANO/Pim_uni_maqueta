@@ -1,0 +1,1075 @@
+@font-face {
+  font-family: "Avenir Black";
+  src: url(../webfonts/avenir-black.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir roman";
+  src: url(../webfonts/Avenir-Roman.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir BC";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  -webkit-text-fill-color: white !important; }
+
+@-webkit-keyframes autofill {
+  to {
+    color: black;
+    background: transparent; } }
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s; }
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* medium - display 4  */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+/* large - display 6 */
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%; }
+  @media (max-width: 319px) {
+    html {
+      display: none; } }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+/*--------header  views -------*/
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  -webkit-text-fill-color: white !important; }
+
+@-webkit-keyframes autofill {
+  to {
+    color: black;
+    background: transparent; } }
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s; }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+@font-face {
+  font-family: "Avenir Black";
+  src: url(../webfonts/avenir-black.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir roman";
+  src: url(../webfonts/Avenir-Roman.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+@font-face {
+  font-family: "Avenir BC";
+  src: url(../webfonts/Avenir-Medium.woff) format("truetype"); }
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header div.wrapper-nav {
+    width: 100%;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #444242;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    header div.wrapper-nav div.container-nav {
+      padding: 0px;
+      margin: auto;
+      width: 100%;
+      /*desktop nav and header*/ }
+      header div.wrapper-nav div.container-nav a.navbar-brand {
+        margin: .5rem 0px .5rem 10px; }
+        header div.wrapper-nav div.container-nav a.navbar-brand > img {
+          width: 75%; }
+      header div.wrapper-nav div.container-nav nav#nav-categories {
+        padding: 0px; }
+        header div.wrapper-nav div.container-nav nav#nav-categories button.navbar-toggler {
+          border-color: rgba(255, 255, 255, 0);
+          margin: .5rem 30px .5rem 30px; }
+        @media (min-width: 778px) and (max-width: 992px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        @media (min-width: 568px) and (max-width: 778px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        @media (max-width: 568px) {
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop {
+            width: 100%;
+            height: auto;
+            background-color: #333333;
+            padding: 2% 7%; } }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+          content: '';
+          position: absolute;
+          top: 75px;
+          right: 48px;
+          width: 16px;
+          height: 16px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background: #333333;
+          border-top: solid 1px #333333;
+          border-left: solid 1px #333333; }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+          @media (min-width: 1200px) and (max-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+          @media (min-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop::before {
+              display: none; } }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download {
+          background-color: #ffffff;
+          border-color: #ffffff;
+          font-size: 16px;
+          height: 2.2rem;
+          margin: auto 0px;
+          width: 100%;
+          max-width: 250px;
+          font-family: "Avenir Medium";
+          border-radius: 15px;
+          font-weight: 700; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download span {
+            background-color: #444242;
+            color: #ffffff;
+            border-radius: 45%;
+            padding: .15rem;
+            margin-left: .5em; }
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop button.btn-download span i {
+              width: 16px;
+              height: 16px;
+              font-size: 12px;
+              margin: .15rem; }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+          padding: 0px 0vw; }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          @media (min-width: 1200px) and (max-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          @media (min-width: 1500px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav {
+              padding: 0px 2vw; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) {
+            /* Lista desplegable en menu*/ }
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+              font-family: "Avenir Medium";
+              color: white;
+              height: auto;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              @media (min-width: 992px) and (max-width: 1200px) {
+                header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                  height: 79px; } }
+              @media (min-width: 1200px) and (max-width: 1500px) {
+                header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                  height: 79px; } }
+              @media (min-width: 1500px) {
+                header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) a.nav-link {
+                  height: 79px; } }
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(1) div#dropdown-menu01 {
+              font-family: "Avenir Medium"; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+            font-family: "Avenir Medium";
+            color: white;
+            height: auto;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            @media (min-width: 992px) and (max-width: 1200px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1200px) and (max-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+            @media (min-width: 1500px) {
+              header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) a.nav-link {
+                height: 79px; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop ul.navbar-nav li:nth-child(2) div#dropdown-menu02 {
+            font-family: "Avenir Medium"; }
+        header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+          margin: .5rem 30px .5rem 30px; }
+          @media (max-width: 568px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          @media (min-width: 568px) and (max-width: 778px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          @media (min-width: 778px) and (max-width: 992px) {
+            header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header {
+              border-top: 1px solid #fafafa;
+              margin: .5rem 0px .5rem 0px;
+              padding-top: 1em; } }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header img.icon-nav {
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            cursor: pointer; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header h5.text-profile {
+            color: #ffffff;
+            padding-left: 10px;
+            font-family: "Avenir Medium";
+            margin: 0px;
+            margin-right: 1.5vw;
+            font-size: 1rem; }
+          header div.wrapper-nav div.container-nav nav#nav-categories div#navbar-desktop div#nav-menu-header span {
+            border-left: solid 1px;
+            height: 23px;
+            background-color: #ffffff;
+            margin: 0px 1vw;
+            border-color: #ffffff; }
+
+/* Menu dropdown*/
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+  list-style: none;
+  background-color: #333333;
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: .25rem; }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+  @media (min-width: 1500px) {
+    .dropdown-menu {
+      background-color: #444242; } }
+
+a.dropdown-item {
+  color: #fafafa;
+  font-family: "Avenir Medium"; }
+
+.dropdown-menu.collapsing {
+  display: block; }
+
+@media (max-width: 992px) {
+  .dropdown-menu {
+    padding: 0;
+    margin-top: 0 !important;
+    border: 0 !important; }
+  .dropdown-menu:before {
+    content: "";
+    display: block;
+    padding-top: .5rem; }
+  .dropdown-menu:after {
+    content: "";
+    display: block;
+    padding-bottom: .5rem; } }
+
+@media (min-width: 992px) {
+  .dropdown > div {
+    position: absolute;
+    clip: rect(0.5rem, 9999px, 9999px, -9999px); }
+  .dropdown-menu {
+    height: auto !important;
+    -webkit-transition: -webkit-transform 0.35s ease !important;
+    transition: -webkit-transform 0.35s ease !important;
+    -o-transition: transform 0.35s ease !important;
+    transition: transform 0.35s ease !important;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease !important; }
+  .dropdown-menu.collapse, .dropdown-menu.sliding {
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%); }
+  .dropdown-menu.collapse:not(.show) {
+    display: block; }
+  .dropdown-menu.collapse.show {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+main {
+  overflow: hidden; }
+
+/*----------------First Section --------------*/
+section#card-categories {
+  border-bottom: 1px solid darkgrey; }
+  section#card-categories div.wrapp-content {
+    width: 97%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[3];
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 20px auto; }
+    @media (max-width: 568px) {
+      section#card-categories div.wrapp-content {
+        -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 10px;
+        max-width: 100%;
+        margin: 10px auto; } }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      section#card-categories div.wrapp-content {
+        -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+        max-width: 100%;
+        margin: 10px auto; } }
+    @media (min-width: 778px) and (max-width: 992px) {
+      section#card-categories div.wrapp-content {
+        -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+        max-width: 100%;
+        margin: 10px auto; } }
+    @media (min-width: 568px) and (max-width: 778px) {
+      section#card-categories div.wrapp-content {
+        -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+        max-width: 100%;
+        margin: 10px auto; } }
+    section#card-categories div.wrapp-content div.card {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      section#card-categories div.wrapp-content div.card h5 {
+        margin: 0; }
+      section#card-categories div.wrapp-content div.card h5.text-title-card {
+        position: absolute;
+        color: #ffffff;
+        font-family: "Avenir Black";
+        font-size: 24px; }
+
+section#novedades div.svg-before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  top: -63px; }
+  section#novedades div.svg-before > svg {
+    width: 100%;
+    max-width: 35px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: absolute; }
+
+section#novedades div.content-box-slider div.col-3 div.novedades-home {
+  background-color: #30343C;
+  width: 100%;
+  height: 360px; }
+  @media (max-width: 568px) {
+    section#novedades div.content-box-slider div.col-3 div.novedades-home {
+      width: 100vw;
+      height: 260px; } }
+  section#novedades div.content-box-slider div.col-3 div.novedades-home div.box-ui {
+    width: 93%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    justify-content: center;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    padding: 1rem 2.75em; }
+    @media (max-width: 568px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.box-ui {
+        width: 100vw; } }
+    section#novedades div.content-box-slider div.col-3 div.novedades-home div.box-ui h5 {
+      color: #ffffff;
+      font-family: "Avenir Black";
+      font-size: 36px; }
+    section#novedades div.content-box-slider div.col-3 div.novedades-home div.box-ui span.ui-horizontal-line {
+      border: 0px;
+      border-bottom: 2px solid #838383;
+      width: 100%;
+      max-width: 200px; }
+    section#novedades div.content-box-slider div.col-3 div.novedades-home div.box-ui > p {
+      color: #838383;
+      font-family: "Avenir roman";
+      font-size: 20px;
+      padding-top: .5em;
+      font-weight: 100; }
+  section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 568px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button {
+        display: none; } }
+    section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button > svg {
+      width: 33px;
+      height: 150px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      position: absolute;
+      right: -30px;
+      z-index: 10; }
+      @media (max-width: 568px) {
+        section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button > svg {
+          display: none; } }
+  section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile {
+        display: none; } }
+    @media (min-width: 1500px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile {
+        display: none; } }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile {
+        display: none; } }
+    @media (min-width: 778px) and (max-width: 992px) {
+      section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile {
+        display: none; } }
+    section#novedades div.content-box-slider div.col-3 div.novedades-home div.svg-line-button-mobile > svg.svg-mobile {
+      width: 33px;
+      height: 150px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(270deg);
+      position: absolute;
+      left: 45%;
+      bottom: -88px;
+      z-index: 10; }
+
+section#novedades div.content-box-slider div.col-9 {
+  margin: auto 0px;
+  padding: 0px 30px; }
+  section#novedades div.content-box-slider div.col-9 div.slider-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section#novedades div.content-box-slider div.col-9 div.slider-products button:focus {
+      outline: 0; }
+
+section#novedades .carousel-control-prev {
+  left: -60px; }
+
+section#novedades .carousel-control-next {
+  right: -60px; }
+
+/*Section baja de main.php // Descubre Nuestra App */
+section#info-below {
+  background-color: #fcfcfc;
+  margin-top: 10px;
+  border-top: 1px solid darkgrey; }
+  section#info-below div.content-ui-below div.svg-before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    top: -63px; }
+    section#info-below div.content-ui-below div.svg-before > svg {
+      width: 100%;
+      max-width: 35px;
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      position: absolute; }
+  section#info-below div.content-ui-below div.row > div.col-sm-12 {
+    padding: 3em 4em 1em 6em; }
+    section#info-below div.content-ui-below div.row > div.col-sm-12 div.box-content-info {
+      padding-right: 20vw;
+      font-family: "Avenir roman"; }
+      section#info-below div.content-ui-below div.row > div.col-sm-12 div.box-content-info h5.title-info {
+        color: #444242;
+        font-family: "Avenir roman";
+        font-size: 40px;
+        margin-bottom: 0px; }
+        section#info-below div.content-ui-below div.row > div.col-sm-12 div.box-content-info h5.title-info span {
+          font-family: "Avenir Black"; }
+      section#info-below div.content-ui-below div.row > div.col-sm-12 div.box-content-info p {
+        color: #444242;
+        font-size: 1rem;
+        padding-top: .5rem;
+        text-align: justify;
+        line-height: 1.4rem; }
+      section#info-below div.content-ui-below div.row > div.col-sm-12 div.box-content-info h3 {
+        font-size: 18px;
+        margin-bottom: 0px;
+        color: #0c67ad;
+        padding-bottom: 5px;
+        font-weight: 700;
+        border-bottom: solid 1px;
+        width: 100%;
+        max-width: 176px; }
+    section#info-below div.content-ui-below div.row > div.col-sm-12 div.row div.col-sm-12 {
+      padding: 0em 1em; }
+      section#info-below div.content-ui-below div.row > div.col-sm-12 div.row div.col-sm-12 div.box-info {
+        height: 90%;
+        font-family: "Avenir roman";
+        background-color: #ffffff;
+        padding: 1.5rem .5rem .5rem 1.5rem;
+        border-radius: 15px;
+        -webkit-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.32);
+        box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.32);
+        margin-top: 2vh; }
+        section#info-below div.content-ui-below div.row > div.col-sm-12 div.row div.col-sm-12 div.box-info > h5 {
+          font-family: "Avenir roman";
+          font-size: 14px;
+          font-weight: 500;
+          color: #838383;
+          margin-bottom: .3rem;
+          border-bottom: solid 0.5px #838383;
+          width: 100%;
+          max-width: 285px;
+          padding-bottom: 4px; }
+        section#info-below div.content-ui-below div.row > div.col-sm-12 div.row div.col-sm-12 div.box-info > p {
+          font-size: "Avenir roman";
+          color: #838383;
+          font-size: 12px;
+          line-height: 16px; }
+    section#info-below div.content-ui-below div.row > div.col-sm-12 div.row div.col-sm-12:nth-child(2) div.box-info h5 {
+      max-width: 170px; }
+  section#info-below div.content-ui-below div.row div#img-cel {
+    padding: 0em 0em 1em 0em;
+    width: 100%; }
+    section#info-below div.content-ui-below div.row div#img-cel div.img-down img {
+      width: 100%; }
+
+/*---------------------------------- Page Product Jonas ---------------------------*/
+section#product-categories {
+  min-height: calc(100vh - 139px);
+  height: 100%;
+  background-image: url(../img/textura-grey.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 580px; }
+  section#product-categories img.img-category {
+    width: 150px;
+    height: 80px; }
+  section#product-categories h3 {
+    font-family: "Avenir Medium";
+    font-weight: 400; }
+  section#product-categories span.border-bottom {
+    margin: 28px auto; }
+  section#product-categories nav.sidebar {
+    min-height: calc(100vh - 139px); }
+  section#product-categories nav h4 {
+    font-family: "Avenir Black";
+    font-weight: 500;
+    margin-bottom: 0em; }
+    @media only screen and (aspect-ratio: 4 / 3) and (orientation: landscape) {
+      section#product-categories nav h4 {
+        font-size: 1rem; } }
+  section#product-categories a.nav-link {
+    background-color: transparent;
+    padding: .5rem 1rem;
+    font-family: "Avenir Medium"; }
+  section#product-categories .boderC {
+    border: 2px solid;
+    border-width: 4px;
+    border-color: #DFDCDA;
+    margin: auto;
+    background-color: white; }
+  section#product-categories .fo {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Avenir roman";
+    padding-bottom: 5px; }
+  section#product-categories .sp {
+    padding-left: 10px; }
+  section#product-categories .sp2 {
+    padding-left: 18px; }
+  section#product-categories .sp3 {
+    padding-left: 32px; }
+  section#product-categories .sp4 {
+    padding-left: 29px; }
+  section#product-categories .carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #b7b7b7; }
+  section#product-categories .carousel-indicators .active {
+    background-color: #515151; }
+  section#product-categories .container {
+    margin-left: 0px; }
+  section#product-categories .grd {
+    background-color: #d2d2d2;
+    color: #000000;
+    padding: 0rem .75rem;
+    font-family: "Avenir roman";
+    font-size: 14px; }
+  section#product-categories div.dropdown-menu p {
+    margin-bottom: 0rem; }
+  section#product-categories .dropdown-menu {
+    background-color: #e6e6e6;
+    color: #000; }
+  section#product-categories .dropdown-item:hover {
+    background-color: #c5c5c5;
+    cursor: default; }
+  section#product-categories .prd-title {
+    font-family: "Avenir roman";
+    font-weight: 100; }
+  section#product-categories .prd-descripcion {
+    font-family: "Avenir Black";
+    margin-bottom: 1em !important; }
+  section#product-categories .prd-attr {
+    color: black;
+    font-family: "Avenir Black"; }
+
+div#personal_line {
+  /*Modal ficha tecnica styles*/ }
+  div#personal_line h5.text-title-card {
+    font-family: "Avenir roman"; }
+  div#personal_line div.modal-header {
+    background-color: #838383; }
+    div#personal_line div.modal-header h5 {
+      font-family: "Avenir Black";
+      color: #444242; }
+
+div#inner-brand {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 50px 120px;
+  max-width: 100%;
+  margin: 2em 5em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  div#inner-brand > div div:nth-child(2) p {
+    font-family: "Avenir roman";
+    font-weight: 100; }
+  div#inner-brand a {
+    color: #444242;
+    text-decoration: none; }
+
+/*---------------------------------- Page download selective---------------------------*/
+section#download-selective div.container-fluid {
+  height: 100%; }
+  section#download-selective div.container-fluid div.row {
+    height: 100%; }
+
+/*Sidebar sticky left*/
+div#sidebar-download {
+  padding: 1em 0em 2em 2em;
+  background-color: #dadada;
+  border-color: #dadada;
+  overflow-y: auto; }
+  div#sidebar-download h5 {
+    font-family: "Avenir Medium";
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 1em;
+    margin: 10% 0%; }
+  div#sidebar-download div.sidebar-sticky ul.nav li.nav-item {
+    /*Desplegable*/ }
+    div#sidebar-download div.sidebar-sticky ul.nav li.nav-item div.nav-link {
+      font-family: "Avenir roman";
+      color: #444242;
+      font-size: 14px;
+      padding: 3px 16px 3px; }
+      div#sidebar-download div.sidebar-sticky ul.nav li.nav-item div.nav-link > svg {
+        margin-right: .5rem; }
+    div#sidebar-download div.sidebar-sticky ul.nav li.nav-item > div:nth-child(2) ul.ui-ul-list-gral {
+      font-family: "Avenir roman";
+      color: #444242;
+      font-size: 14px;
+      padding-left: 15px; }
+      div#sidebar-download div.sidebar-sticky ul.nav li.nav-item > div:nth-child(2) ul.ui-ul-list-gral li.list-group-item {
+        background-color: transparent;
+        border: 0px;
+        padding-top: 3px;
+        padding-bottom: 3px; }
+        div#sidebar-download div.sidebar-sticky ul.nav li.nav-item > div:nth-child(2) ul.ui-ul-list-gral li.list-group-item > div:nth-child(1) > svg {
+          margin-right: .5rem; }
+        div#sidebar-download div.sidebar-sticky ul.nav li.nav-item > div:nth-child(2) ul.ui-ul-list-gral li.list-group-item > div:nth-child(2) {
+          padding-left: 30px; }
+  div#sidebar-download div.sidebar-sticky ul.nav span.custom-control {
+    padding-left: 2rem; }
+
+.custom-control-label::before {
+  position: absolute;
+  top: .25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fafafa; }
+
+.pointer {
+  cursor: pointer; }
+
+/* Download selective - right */
+section#download-selective div#query-download {
+  background-color: #f6f6f6;
+  background-image: url(../img/textura.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 580px;
+  height: 100%;
+  overflow-y: auto; }
+  section#download-selective div#query-download .wrap-download div.row div.col h6 {
+    margin-top: 3.5vh;
+    font-family: "Avenir Black";
+    font-weight: 800;
+    font-size: 1.5vw;
+    padding-left: 20px; }
+  section#download-selective div#query-download .wrap-download div.row div.col div.wrap-col-download {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px; }
+    section#download-selective div#query-download .wrap-download div.row div.col div.wrap-col-download .card-download {
+      height: 230px; }
+    section#download-selective div#query-download .wrap-download div.row div.col div.wrap-col-download img.img-card-icon-download {
+      width: 40px;
+      margin-bottom: .5em; }
+    section#download-selective div#query-download .wrap-download div.row div.col div.wrap-col-download H5 {
+      margin-top: .75rem;
+      margin-bottom: .5rem;
+      font-family: "Avenir Medium";
+      font-weight: 800;
+      font-size: 1.5vw; }
+    section#download-selective div#query-download .wrap-download div.row div.col div.wrap-col-download p {
+      font-family: "Avenir roman";
+      font-size: 12px; }
+
+div#query-download .custom-control {
+  padding-left: 0px;
+  padding-right: 1.5rem; }
+
+div#query-download .custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top; }
+  div#query-download .custom-control-label::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #f0f0f0;
+    margin: .5em 0em; }
+  div#query-download .custom-control-label::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5em 0em; }
+
+div#query-download .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff; }
+
+div#query-download div.text-center {
+  width: 100%; }
+  div#query-download div.text-center button.btn-download {
+    background-color: #007bff;
+    color: #ffffff;
+    font-family: "Avenir roman";
+    font-size: 1.3vw;
+    width: 180px;
+    margin: 2vh 0em; }
+    div#query-download div.text-center button.btn-download:hover {
+      background-color: #056ad6; }
+
+/*-------------------  Page key visual  --------------------------*/
+section#keyvisual {
+  background-image: url(../img/textura.png);
+  background-repeat: no-repeat; }
+  section#keyvisual div.ui-box-tittle {
+    padding-left: 2.5em;
+    padding-bottom: .2em; }
+    section#keyvisual div.ui-box-tittle h3 {
+      font-family: "Avenir Black"; }
+    section#keyvisual div.ui-box-tittle h6 {
+      font-family: "Avenir roman";
+      font-weight: 800; }
+  section#keyvisual div.inner-keyvisual div.top-buttons {
+    padding: 0px 15px;
+    margin: 2.5em 3em 2em 3em; }
+    section#keyvisual div.inner-keyvisual div.top-buttons form.col-3 {
+      padding-left: 0px; }
+    section#keyvisual div.inner-keyvisual div.top-buttons button {
+      font-family: "Avenir roman"; }
+      section#keyvisual div.inner-keyvisual div.top-buttons button img {
+        width: 20px;
+        height: 20px;
+        margin-right: 1em; }
+  section#keyvisual div.inner-keyvisual div.row:nth-child(2) {
+    margin: 0em 3em; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table table {
+      margin-bottom: 2em; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table table thead {
+      font-family: "Avenir Medium"; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table table tbody {
+      font-family: "Avenir roman";
+      color: #444242;
+      font-size: 1vw; }
+      section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table table tbody tr td a {
+        color: #444242; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table div#Modal-delete-key div.modal-header {
+      background-color: #f6f6f6;
+      font-family: "Avenir roman"; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table div#Modal-delete-key div.modal-body {
+      font-family: "Avenir Medium";
+      text-align: center; }
+    section#keyvisual div.inner-keyvisual div.row:nth-child(2) div.inner-table > h6 {
+      font-family: "Avenir roman";
+      font-weight: 100;
+      padding-left: 12px;
+      margin-bottom: 2em; }
+
+/*------------------------- Page: Logos view --------------------------------*/
+section#logos {
+  min-height: calc(100vh - 139px);
+  height: 100%;
+  background-image: url(../img/textura-grey.png);
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+  section#logos section#card-categories div.wrapp-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (3fr)[5];
+    grid-template-columns: repeat(5, 3fr);
+    grid-gap: 50px 20px; }
+    @media (min-width: 778px) and (max-width: 992px) {
+      section#logos section#card-categories div.wrapp-content {
+        -ms-grid-columns: (3fr)[3];
+        grid-template-columns: repeat(3, 3fr); } }
+    @media (min-width: 568px) and (max-width: 778px) {
+      section#logos section#card-categories div.wrapp-content {
+        -ms-grid-columns: (3fr)[2];
+        grid-template-columns: repeat(2, 3fr); } }
+    @media (max-width: 568px) {
+      section#logos section#card-categories div.wrapp-content {
+        -ms-grid-columns: (3fr)[1];
+        grid-template-columns: repeat(1, 3fr); } }
+
+section.personal_line {
+  width: 100%; }
+  section.personal_line .sidebarColor {
+    background-color: #cecdcd;
+    height: calc(135vh - 143px); }
+  section.personal_line section#card-categories {
+    border-bottom: none; }
+  section.personal_line .sinBoder {
+    width: 170px;
+    margin: auto; }
+  section.personal_line .boderC {
+    border: 2px solid;
+    border-width: 4px;
+    border-color: #DFDCDA;
+    width: 170px;
+    background-color: white; }
+  section.personal_line .ctn {
+    margin-top: 15px;
+    padding: 0 26px;
+    background-color: #cecdcd;
+    color: #000;
+    border-color: #cecdcd; }
+
+/*------------footer--------------------*/
+footer {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #444242;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000; }
+  footer div.footer-ui {
+    width: 97%;
+    margin: auto 2em auto 2.5em;
+    color: #ffffff;
+    font-family: "Avenir roman";
+    font-weight: 100; }
+    footer div.footer-ui p {
+      margin-bottom: 0px;
+      line-height: 14px;
+      font-size: 12px; }
+      @media (max-width: 568px) {
+        footer div.footer-ui p {
+          font-size: 11px;
+          line-height: 14px; } }
+      @media (min-width: 568px) and (max-width: 778px) {
+        footer div.footer-ui p {
+          line-height: 14px;
+          font-size: 10px; } }
+      footer div.footer-ui p > a {
+        color: #ffffff;
+        text-decoration: none; }
+        footer div.footer-ui p > a > span {
+          margin-left: .5em;
+          margin-top: 5px; }
+    @media (max-width: 568px) {
+      footer div.footer-ui {
+        text-align: center; } }

@@ -1,0 +1,43 @@
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black !important;
+  color: #8fcde7 !important; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 600s ease-in-out 0s;
+  -o-transition: background-color 600s ease-in-out 0s;
+  transition: background-color 600s ease-in-out 0s; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  overflow: visible;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: #ffffff00;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 1rem "Avenir Regular"; }

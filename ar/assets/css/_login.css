@@ -1,0 +1,195 @@
+/*--------------Variables Fuentes ----------------*/
+/*Size*/
+/*-----------Variables wrap-----------------*/
+/*Margenes standars*/
+/*Font size standars*/
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black !important; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  overflow: visible;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: #ffffff00;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 1rem "Avenir Regular"; }
+
+/*Media queries*/
+/*Variables de alto de pantalla*/
+/*Aspect ratio Media query*/
+/*Aspect ratio desktop device*/
+div#login form.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    div#login form.form-signin {
+      max-width: 600px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    div#login form.form-signin {
+      max-width: 700px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    div#login form.form-signin {
+      max-width: 400px; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form.form-signin {
+      max-width: 50vw; } }
+
+div#login form h5.signin-title {
+  font-family: "Avenir Regular";
+  color: #ffffff;
+  font-size: 7vw;
+  text-align: center; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    div#login form h5.signin-title {
+      font-size: 4vw; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form h5.signin-title {
+      font-size: 2.2vw; } }
+
+div#login form > img {
+  text-align: center;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5vh auto; }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form > img {
+      width: 3vw; } }
+
+@media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+  div#login form div.ui-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 5vh; } }
+
+@media (min-width: 568px) and (max-width: 778px) {
+  div#login form div.ui-input {
+    margin-top: 0vh; } }
+
+div#login form input#inputPassword {
+  margin-left: 7vw; }
+  @media (max-width: 568px) {
+    div#login form input#inputPassword {
+      margin-left: 0vw; } }
+
+div#login form input.form-control {
+  font-family: "Avenir Regular";
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: transparent !important;
+  background-clip: padding-box;
+  border: 0px solid #ced4da00;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px;
+  margin-bottom: 1.5em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    div#login form input.form-control {
+      font-size: 1.5rem; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form input.form-control {
+      font-size: 1.2rem;
+      max-width: 330px !important; } }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    div#login form input.form-control {
+      font-size: 1.2rem;
+      max-width: 400px !important; } }
+
+div#login form ::-webkit-input-placeholder {
+  color: #ffffff; }
+
+div#login form :-ms-input-placeholder {
+  color: #ffffff; }
+
+div#login form ::-ms-input-placeholder {
+  color: #ffffff; }
+
+div#login form ::placeholder {
+  color: #ffffff; }
+
+div#login form button.btn-init {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  font-family: "Avenir Regular";
+  -ms-flex-line-pack: center;
+  align-content: center;
+  font-weight: 800; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    div#login form button.btn-init {
+      font-size: 1.5rem; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form button.btn-init {
+      max-width: 250px;
+      margin: 2vh auto; } }
+  @media (min-width: 568px) and (max-width: 778px) {
+    div#login form button.btn-init {
+      max-width: 180px;
+      padding: .3rem .5rem;
+      font-size: 1rem; } }
+
+div#login form > h6 {
+  font-family: "Avenir Regular";
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    div#login form > h6 {
+      font-size: 20px; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form > h6 {
+      font-size: 1.5vw;
+      line-height: 2vw;
+      padding-top: 8vh; } }
+  @media (min-width: 568px) and (max-width: 778px) {
+    div#login form > h6 {
+      padding-top: 0vh;
+      font-size: 1.8vw; } }
+  @media (min-width: 568px) and (max-width: 778px) {
+    div#login form > h6.mt-5 {
+      margin-top: 1.5rem !important; } }
+
+div#login form > p {
+  font-family: "Avenir Regular";
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    div#login form > p {
+      font-size: 20px; } }
+  @media only screen and (min-aspect-ratio: 9 / 16) and (orientation: landscape) {
+    div#login form > p {
+      font-size: 1.5vw;
+      line-height: 2vw; } }
+  @media (min-width: 568px) and (max-width: 778px) {
+    div#login form > p {
+      font-size: 1.8vw; } }
